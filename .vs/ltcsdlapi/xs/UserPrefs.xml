@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{CC0CD8E0-28EE-4803-B3C1-35F7DEED4BCA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ltcsdlapi/Controllers/UserController.cs">
+    <Files>
+      <File FileName="ltcsdlapi/Controllers/UnitInfoController.cs" Line="37" Column="53" />
+      <File FileName="DAL/DAL.cs" Line="685" Column="49" />
+      <File FileName="DAL/DALInterface.cs" Line="13" Column="9" />
+      <File FileName="BLL/BLLInterface.cs" Line="13" Column="37" />
+      <File FileName="BLL/BLL.cs" Line="120" Column="36" />
+      <File FileName="ltcsdlapi/Controllers/UserController.cs" Line="47" Column="44" />
+      <File FileName="DTO/DTO.cs" Line="6" Column="27" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ltcsdlapi" expanded="True">
+            <Node name="BLL" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+            </Node>
+            <Node name="DAL" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="DTO" expanded="True" />
+            <Node name="ltcsdlapi" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="UserController.cs" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ltcsdlapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

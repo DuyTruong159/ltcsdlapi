@@ -1,0 +1,12 @@
+/Users/duytruong/Projects/ltcsdlapi/DTO/bin/Release/net5.0/DTO.deps.json
+/Users/duytruong/Projects/ltcsdlapi/DTO/bin/Release/net5.0/DTO.dll
+/Users/duytruong/Projects/ltcsdlapi/DTO/bin/Release/net5.0/ref/DTO.dll
+/Users/duytruong/Projects/ltcsdlapi/DTO/bin/Release/net5.0/DTO.pdb
+/Users/duytruong/Projects/ltcsdlapi/DTO/obj/Release/net5.0/DTO.csproj.AssemblyReference.cache
+/Users/duytruong/Projects/ltcsdlapi/DTO/obj/Release/net5.0/DTO.GeneratedMSBuildEditorConfig.editorconfig
+/Users/duytruong/Projects/ltcsdlapi/DTO/obj/Release/net5.0/DTO.AssemblyInfoInputs.cache
+/Users/duytruong/Projects/ltcsdlapi/DTO/obj/Release/net5.0/DTO.AssemblyInfo.cs
+/Users/duytruong/Projects/ltcsdlapi/DTO/obj/Release/net5.0/DTO.csproj.CoreCompileInputs.cache
+/Users/duytruong/Projects/ltcsdlapi/DTO/obj/Release/net5.0/DTO.dll
+/Users/duytruong/Projects/ltcsdlapi/DTO/obj/Release/net5.0/ref/DTO.dll
+/Users/duytruong/Projects/ltcsdlapi/DTO/obj/Release/net5.0/DTO.pdb

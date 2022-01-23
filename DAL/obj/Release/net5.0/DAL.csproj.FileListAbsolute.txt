@@ -1,0 +1,15 @@
+/Users/duytruong/Projects/ltcsdlapi/DAL/bin/Release/net5.0/DAL.deps.json
+/Users/duytruong/Projects/ltcsdlapi/DAL/bin/Release/net5.0/DAL.dll
+/Users/duytruong/Projects/ltcsdlapi/DAL/bin/Release/net5.0/ref/DAL.dll
+/Users/duytruong/Projects/ltcsdlapi/DAL/bin/Release/net5.0/DAL.pdb
+/Users/duytruong/Projects/ltcsdlapi/DAL/bin/Release/net5.0/DTO.dll
+/Users/duytruong/Projects/ltcsdlapi/DAL/bin/Release/net5.0/DTO.pdb
+/Users/duytruong/Projects/ltcsdlapi/DAL/obj/Release/net5.0/DAL.csproj.AssemblyReference.cache
+/Users/duytruong/Projects/ltcsdlapi/DAL/obj/Release/net5.0/DAL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/duytruong/Projects/ltcsdlapi/DAL/obj/Release/net5.0/DAL.AssemblyInfoInputs.cache
+/Users/duytruong/Projects/ltcsdlapi/DAL/obj/Release/net5.0/DAL.AssemblyInfo.cs
+/Users/duytruong/Projects/ltcsdlapi/DAL/obj/Release/net5.0/DAL.csproj.CoreCompileInputs.cache
+/Users/duytruong/Projects/ltcsdlapi/DAL/obj/Release/net5.0/DAL.csproj.CopyComplete
+/Users/duytruong/Projects/ltcsdlapi/DAL/obj/Release/net5.0/DAL.dll
+/Users/duytruong/Projects/ltcsdlapi/DAL/obj/Release/net5.0/ref/DAL.dll
+/Users/duytruong/Projects/ltcsdlapi/DAL/obj/Release/net5.0/DAL.pdb

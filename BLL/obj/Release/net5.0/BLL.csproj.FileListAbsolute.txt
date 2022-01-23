@@ -1,0 +1,17 @@
+/Users/duytruong/Projects/ltcsdlapi/BLL/bin/Release/net5.0/BLL.deps.json
+/Users/duytruong/Projects/ltcsdlapi/BLL/bin/Release/net5.0/BLL.dll
+/Users/duytruong/Projects/ltcsdlapi/BLL/bin/Release/net5.0/ref/BLL.dll
+/Users/duytruong/Projects/ltcsdlapi/BLL/bin/Release/net5.0/BLL.pdb
+/Users/duytruong/Projects/ltcsdlapi/BLL/bin/Release/net5.0/DAL.dll
+/Users/duytruong/Projects/ltcsdlapi/BLL/bin/Release/net5.0/DTO.dll
+/Users/duytruong/Projects/ltcsdlapi/BLL/bin/Release/net5.0/DAL.pdb
+/Users/duytruong/Projects/ltcsdlapi/BLL/bin/Release/net5.0/DTO.pdb
+/Users/duytruong/Projects/ltcsdlapi/BLL/obj/Release/net5.0/BLL.csproj.AssemblyReference.cache
+/Users/duytruong/Projects/ltcsdlapi/BLL/obj/Release/net5.0/BLL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/duytruong/Projects/ltcsdlapi/BLL/obj/Release/net5.0/BLL.AssemblyInfoInputs.cache
+/Users/duytruong/Projects/ltcsdlapi/BLL/obj/Release/net5.0/BLL.AssemblyInfo.cs
+/Users/duytruong/Projects/ltcsdlapi/BLL/obj/Release/net5.0/BLL.csproj.CoreCompileInputs.cache
+/Users/duytruong/Projects/ltcsdlapi/BLL/obj/Release/net5.0/BLL.csproj.CopyComplete
+/Users/duytruong/Projects/ltcsdlapi/BLL/obj/Release/net5.0/BLL.dll
+/Users/duytruong/Projects/ltcsdlapi/BLL/obj/Release/net5.0/ref/BLL.dll
+/Users/duytruong/Projects/ltcsdlapi/BLL/obj/Release/net5.0/BLL.pdb
