@@ -55,5 +55,39 @@ namespace ltcsdlapi.Controllers
 
             return null;
         }
+
+        [HttpPost("addCourse")]
+        public CourseModel PostInsertCourse(CourseModel model)
+        {
+            try
+            {
+                bll.postCourseInsert(model);
+
+                return model;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+
+            return null;
+        }
+
+        [HttpPost("updateCourse/{courseId}")]
+        public CourseModel PostUpdatetCourse(int courseId, CourseModel model)
+        {
+            try
+            {
+                bll.PostCourseUpdate(courseId, model);
+
+                return model;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+
+            return null;
+        }
     }
 }

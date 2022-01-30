@@ -133,6 +133,28 @@ namespace DAL
             return Result;
         }
 
+        public void postCourseInsert(CourseModel model)
+        {
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendFormat("CALL englishtest.postCourseInsert('{0}', '{1}', '{2}')", model.name, model.image, model.description);
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = sb.ToString();
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine(ex);
+                conn.Close();
+            }
+        }
+
         public List<LessonModel> getLesson(int id)
         {
             var Result = new List<LessonModel>();
@@ -155,7 +177,8 @@ namespace DAL
                         name = dr["name"].ToString(),
                         image = dr["image"].ToString(),
                         description = dr["description"].ToString(),
-                        courseId = int.Parse(dr["course_id"].ToString())
+                        courseId = int.Parse(dr["course_id"].ToString()),
+                        money = int.Parse(dr["money"].ToString())
                     });
                 }
                 conn.Close();
@@ -191,6 +214,7 @@ namespace DAL
                     Result.image = dr["image"].ToString();
                     Result.description = dr["description"].ToString();
                     Result.courseId = int.Parse(dr["course_id"].ToString());
+                    Result.money = int.Parse(dr["money"].ToString());
                 }
                 conn.Close();
             }
@@ -226,7 +250,8 @@ namespace DAL
                         name = dr["name"].ToString(),
                         image = dr["image"].ToString(),
                         description = dr["description"].ToString(),
-                        courseId = int.Parse(dr["course_id"].ToString())
+                        courseId = int.Parse(dr["course_id"].ToString()),
+                        money = int.Parse(dr["money"].ToString())
                     });
                 }
                 conn.Close();
@@ -263,7 +288,8 @@ namespace DAL
                         name = dr["name"].ToString(),
                         image = dr["image"].ToString(),
                         description = dr["description"].ToString(),
-                        courseId = int.Parse(dr["course_id"].ToString())
+                        courseId = int.Parse(dr["course_id"].ToString()),
+                        money = int.Parse(dr["money"].ToString())
                     });
                 }
                 conn.Close();
@@ -703,6 +729,214 @@ namespace DAL
             {
                 StringBuilder sb = new StringBuilder();
                 sb.AppendFormat("CALL englishtest.getUsersInfo({0})", id);
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = sb.ToString();
+
+                conn.Open();
+                MySqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    Result.id = int.Parse(dr["id"].ToString());
+                    Result.fullname = dr["fullname"].ToString();
+                    Result.username = dr["username"].ToString();
+                    Result.password = dr["password"].ToString();
+                    Result.email = dr["email"].ToString();
+                }
+                conn.Close();
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine(ex);
+                Result = null;
+                conn.Close();
+            }
+
+            return Result;
+        }
+
+        public void PostUserUpdate(int id, UserModel model)
+        {
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendFormat("CALL englishtest.postUpdateUser({0}, '{1}', '{2}', '{3}', '{4}')", id, model.fullname, model.username, model.password, model.email);
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = sb.ToString();
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine(ex);
+                conn.Close();
+            }
+        }
+
+        public void PostCourseUpdate(int id, CourseModel model)
+        {
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendFormat("CALL englishtest.postUpdateCourse({0}, '{1}', '{2}', '{3}')", id, model.name, model.image, model.description);
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = sb.ToString();
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine(ex);
+                conn.Close();
+            }
+        }
+
+        public void postLessonInsert(LessonModel model)
+        {
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendFormat("CALL englishtest.postLessonsInsert('{0}', '{1}', '{2}', {3}, {4})", model.name, model.image, model.description, model.courseId, model.money);
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = sb.ToString();
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine(ex);
+                conn.Close();
+            }
+        }
+
+        public void postLessonUpdate(int id, LessonModel model)
+        {
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendFormat("CALL englishtest.postLessonsUpdate({0}, '{1}', '{2}', '{3}', {4}, {5})", id, model.name, model.image, model.description, model.courseId, model.money);
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = sb.ToString();
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine(ex);
+                conn.Close();
+            }
+        }
+
+        public void postUnitInsert(UnitModel model)
+        {
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendFormat("CALL englishtest.postUnitInsert('{0}', '{1}', {2})", model.name, model.trans_name, model.lessonId);
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = sb.ToString();
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine(ex);
+                conn.Close();
+            }
+        }
+
+        public void postUnitUpdate(int id, UnitModel model)
+        {
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendFormat("CALL englishtest.postUnitUpdate({0}, '{1}', '{2}', {3})", id, model.name, model.trans_name, model.lessonId);
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = sb.ToString();
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine(ex);
+                conn.Close();
+            }
+        }
+
+        public void postUnitInfoInsert(UnitInfoModel model)
+        {
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendFormat("CALL englishtest.postUnitInfoInsert('{0}', '{1}', '{2}', '{3}', '{4}', {5}, {6})", model.name, model.trans_name, model.description, model.video, model.css, model.unitId, model.lessonId);
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = sb.ToString();
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine(ex);
+                conn.Close();
+            }
+        }
+
+        public void postUnitInfoUpdate(int id, UnitInfoModel model)
+        {
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendFormat("CALL englishtest.postUnitInfoUpdate({0}, '{1}', '{2}', '{3}', '{4}', '{5}', {6}, {7})", id, model.name, model.trans_name, model.description, model.video, model.css, model.unitId, model.lessonId);
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = sb.ToString();
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine(ex);
+                conn.Close();
+            }
+        }
+
+        public UserModel Login(UserModel model)
+        {
+            var Result = new UserModel();
+
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendFormat("CALL englishtest.sp_login('{0}', '{1}')", model.username, model.password);
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandText = sb.ToString();

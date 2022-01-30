@@ -35,6 +35,11 @@ namespace BLL
             return dal.getCourseInfo(id);
         }
 
+        public void postCourseInsert(CourseModel model)
+        {
+            dal.postCourseInsert(model);
+        }
+
         public List<LessonModel> GetLesson(int id)
         {
             return dal.getLesson(id);
@@ -123,6 +128,46 @@ namespace BLL
         public UserModel GetUsersInfo(int id)
         {
             return dal.GetUsersInfo(id);
+        }
+
+        public void PostUserUpdate(int id, UserModel model)
+        {
+            dal.PostUserUpdate(id, model);
+        }
+
+        public void PostCourseUpdate(int id, CourseModel model)
+        {
+            dal.PostCourseUpdate(id, model);
+        }
+
+        public void postLessonInsert(LessonModel model)
+        {
+            dal.postLessonInsert(model);
+        }
+
+        public void postLessonUpdate(int id, LessonModel model)
+        {
+            dal.postLessonUpdate(id, model);
+        }
+
+        public void postUnitInsert(UnitModel model)
+        {
+            dal.postUnitInsert(model);
+        }
+
+        public void postUnitUpdate(int id, UnitModel model)
+        {
+            dal.postUnitUpdate(id, model);
+        }
+
+        public void postUnitInfoInsert(UnitInfoModel model)
+        {
+            dal.postUnitInfoInsert(model);
+        }
+
+        public void postUnitInfoUpdate(int id, UnitInfoModel model)
+        {
+            dal.postUnitInfoUpdate(id, model);
         }
     }
 }

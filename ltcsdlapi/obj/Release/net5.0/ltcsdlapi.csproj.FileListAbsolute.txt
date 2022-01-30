@@ -43,3 +43,13 @@
 /Users/duytruong/Projects/ltcsdlapi/ltcsdlapi/obj/Release/net5.0/ref/ltcsdlapi.dll
 /Users/duytruong/Projects/ltcsdlapi/ltcsdlapi/obj/Release/net5.0/ltcsdlapi.pdb
 /Users/duytruong/Projects/ltcsdlapi/ltcsdlapi/obj/Release/net5.0/ltcsdlapi.genruntimeconfig.cache
+/Users/duytruong/Projects/ltcsdlapi/ltcsdlapi/bin/Release/net5.0/System.Net.Http.Formatting.dll
+/Users/duytruong/Projects/ltcsdlapi/ltcsdlapi/bin/Release/net5.0/System.Web.Http.dll
+/Users/duytruong/Projects/ltcsdlapi/ltcsdlapi/bin/Release/net5.0/Newtonsoft.Json.dll
+/Users/duytruong/Projects/ltcsdlapi/ltcsdlapi/bin/Release/net5.0/Newtonsoft.Json.Bson.dll
+/Users/duytruong/Projects/ltcsdlapi/ltcsdlapi/bin/Release/net5.0/System.Web.Cors.dll
+/Users/duytruong/Projects/ltcsdlapi/ltcsdlapi/bin/Release/net5.0/Microsoft.Owin.dll
+/Users/duytruong/Projects/ltcsdlapi/ltcsdlapi/bin/Release/net5.0/Microsoft.Owin.Cors.dll
+/Users/duytruong/Projects/ltcsdlapi/ltcsdlapi/bin/Release/net5.0/Microsoft.Owin.Security.dll
+/Users/duytruong/Projects/ltcsdlapi/ltcsdlapi/bin/Release/net5.0/Microsoft.Owin.Security.OAuth.dll
+/Users/duytruong/Projects/ltcsdlapi/ltcsdlapi/bin/Release/net5.0/Owin.dll

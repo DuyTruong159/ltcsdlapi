@@ -55,5 +55,50 @@ namespace ltcsdlapi.Controllers
 
             return null;
         }
+
+        [HttpPost("addUser")]
+        public UserModel PostInsertUser(UserModel model)
+        {
+            if(bll.addUser(model))
+            {
+                return model;
+            }
+
+            return null;
+        }
+
+        [HttpPost("updateUser/{userId}")]
+        public UserModel PostUpdatetUser(int userId, UserModel model)
+        {
+            try
+            {
+                bll.PostUserUpdate(userId, model);
+
+                return model;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+
+            return null;
+        }
+
+        [HttpPost("login")]
+        public UserModel Login(UserModel model)
+        {
+            try
+            {
+                UserModel user = bll.GetUser(model);
+
+                return model;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+
+            return null;
+        }
     }
 }

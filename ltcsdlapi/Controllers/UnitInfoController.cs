@@ -55,5 +55,39 @@ namespace ltcsdlapi.Controllers
 
             return null;
         }
+
+        [HttpPost("addUnitInfo")]
+        public UnitInfoModel PostInsertUnitInfo(UnitInfoModel model)
+        {
+            try
+            {
+                bll.postUnitInfoInsert(model);
+
+                return model;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+
+            return null;
+        }
+
+        [HttpPost("updateUnitInfo/{unitInfoId}")]
+        public UnitInfoModel PostUpdatetUnitInfo(int unitInfoId, UnitInfoModel model)
+        {
+            try
+            {
+                bll.postUnitInfoUpdate(unitInfoId, model);
+
+                return model;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+
+            return null;
+        }
     }
 }

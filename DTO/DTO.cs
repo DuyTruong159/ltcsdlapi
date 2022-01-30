@@ -29,6 +29,7 @@ namespace DTO
         public string image { get; set; }
         public string description { get; set; }
         public int courseId { get; set; }
+        public int money { get; set; }
     }
 
     public class UnitModel

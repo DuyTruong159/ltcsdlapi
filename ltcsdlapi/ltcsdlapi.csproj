@@ -12,9 +12,15 @@
   <ItemGroup>
     <None Remove="Swashbuckle.AspNetCore.Swagger" />
     <None Remove="Swashbuckle.AspNetCore" />
+    <None Remove="Microsoft.AspNet.WebApi.Core" />
+    <None Remove="Microsoft.Owin.Security.OAuth" />
+    <None Remove="Microsoft.Owin.Cors" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.2.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+    <PackageReference Include="Microsoft.Owin.Security.OAuth" Version="4.2.0" />
+    <PackageReference Include="Microsoft.Owin.Cors" Version="4.2.0" />
   </ItemGroup>
 </Project>
